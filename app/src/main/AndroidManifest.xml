@@ -24,6 +24,7 @@
 
         </activity>
 
+        <activity android:name=".cehua_shanchu.SwipeMenuActivity"></activity>
     </application>
 
 </manifest>

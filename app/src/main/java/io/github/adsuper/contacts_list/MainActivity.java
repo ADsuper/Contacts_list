@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, ContactsActivity.class));
                 break;
             case R.id.btn2:
+                startActivity(new Intent(this, SwipeMenuActivity.class));
                 break;
         }
     }

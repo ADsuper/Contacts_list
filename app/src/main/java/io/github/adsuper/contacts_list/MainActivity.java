@@ -11,6 +11,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.github.adsuper.contacts_list.cehua_shanchu.SwipeMenuActivity;
 import io.github.adsuper.contacts_list.meizu.ContactsActivity;
+import io.github.adsuper.contacts_list.popupwindow.PopupWindowActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     Button mBtn1;
     @BindView(R.id.btn2)
     Button mBtn2;
+    @BindView(R.id.btn3)
+    Button mBtn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn1, R.id.btn2})
+    @OnClick({R.id.btn1, R.id.btn2, R.id.btn3})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn1:
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn2:
                 startActivity(new Intent(this, SwipeMenuActivity.class));
+                break;
+            case R.id.btn3:
+                startActivity(new Intent(this, PopupWindowActivity.class));
                 break;
         }
     }

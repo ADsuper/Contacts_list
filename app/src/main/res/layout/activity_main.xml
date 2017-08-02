@@ -18,5 +18,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="跳转到侧滑删除页面"/>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到popupWindow页面"/>
 
 </LinearLayout>

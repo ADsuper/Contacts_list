@@ -25,6 +25,7 @@
         </activity>
 
         <activity android:name=".cehua_shanchu.SwipeMenuActivity"></activity>
+        <activity android:name=".popupwindow.PopupWindowActivity"></activity>
     </application>
 
 </manifest>
